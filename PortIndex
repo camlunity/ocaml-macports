@@ -1,2 +1,2 @@
-caml-dypgen 443
-portdir lang/caml-dypgen description {Self-extensible parsers and lexers for the Objective Caml programming language.} homepage http://dypgen.free.fr/ epoch 0 platforms darwin name caml-dypgen depends_lib {port:caml-findlib port:ocaml} license unknown maintainers {mww openmaintainer} long_description {{Self-extensible parsers and lexers for the Objective Caml programming language.}} categories {lang devel ml} version 20110328-1 revision 0
+caml-dypgen 410
+portdir lang/caml-dypgen description {Self-extensible parsers and lexers for the Objective Caml programming language.} homepage http://dypgen.free.fr/ epoch 0 platforms darwin name caml-dypgen depends_lib {port:caml-findlib port:ocaml} license unknown long_description {{Self-extensible parsers and lexers for the Objective Caml programming language.}} version 20110328-1 categories {lang devel ml} revision 0
