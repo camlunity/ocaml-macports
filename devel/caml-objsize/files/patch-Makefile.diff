@@ -1,0 +1,14 @@
+--- objsize-0.16.old/Makefile	2011-06-09 17:15:10.000000000 +0300
++++ objsize-0.16/Makefile	2011-06-09 23:41:22.000000000 +0300
+@@ -100,7 +100,10 @@
+ 	  tests-inst.byt.exe tests-inst.nat.exe
+ 
+ install : objsize.cma objsize.cmxa
+-	ocamlfind install -patch-version $(VER) objsize META \
++	mkdir -p $(DESTDIR)/`ocamlfind printconf destdir`
++	ocamlfind install -ldconf ignore \
++	  -destdir $(DESTDIR)/`ocamlfind printconf destdir` \
++	  -patch-version $(VER) objsize META \
+ 	  libobjsize.a objsize.a objsize.cma \
+ 	  objsize.cmi objsize.cmxa objsize.mli \
+ 	  -dll dllobjsize.$(SO)

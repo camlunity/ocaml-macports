@@ -1,5 +1,7 @@
 caml-camomile 306
 variants universal portdir devel/caml-camomile description {OCaml module to convert strings to and from various encodings} homepage http://camomile.sf.net/ epoch 0 platforms darwin name caml-camomile depends_lib {port:ocaml port:caml-findlib} license unknown categories {devel ml} version 0.8.3 revision 0
+caml-objsize 325
+portdir devel/caml-objsize description {OCaml library for computing size of OCaml valuesx} homepage http://forge.ocamlcore.org/projects/objsize/ epoch 0 platforms darwin name caml-objsize depends_lib {port:ocaml port:caml-findlib} license unknown maintainers ftrvxmtrx@gmail.com version 0.16 categories {devel ml} revision 0
 caml-postgresql 570
 portdir devel/caml-postgresql description {OCaml-interface to the PostgreSQL-database} homepage http://www.ocaml.info/home/ocaml_sources.html epoch 0 platforms darwin name caml-postgresql depends_lib {port:ocaml port:caml-findlib port:postgresql83} license unknown long_description {This OCaml-library provides an interface to PostgreSQL Almost all functionality available through the C-API (libpq) is replicated in a type-safe way. This library uses objects for representing database connections and results of queries.} version 1.16.0 categories {devel ml} revision 1
 caml-sqlite3 345

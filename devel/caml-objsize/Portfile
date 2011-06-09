@@ -1,0 +1,24 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+
+PortSystem          1.0
+
+name                caml-objsize
+version             0.16
+categories          devel ml
+maintainers         ftrvxmtrx@gmail.com
+description         OCaml library for computing size of OCaml valuesx
+homepage            http://forge.ocamlcore.org/projects/objsize/
+platforms           darwin
+master_sites        http://forge.ocamlcore.org/frs/download.php/442/
+distname            objsize-${version}
+
+checksums           md5     66f550c611d3a3499454ff906d60b42d \
+                    sha1    18818f25686153e5538a446abc2eb42c9d5a0d03 \
+                    rmd160  43c45e718bd59b0933ddd8fc3eead6d22c82769a
+
+depends_lib         port:ocaml port:caml-findlib
+
+patchfiles          patch-Makefile.diff
+
+use_configure       no
+patch.pre_args      -p1

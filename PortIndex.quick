@@ -1,4 +1,5 @@
 caml-camomile 0
-caml-postgresql 324
-caml-sqlite3 914
-caml-dypgen 1276
+caml-objsize 324
+caml-postgresql 666
+caml-sqlite3 1256
+caml-dypgen 1618
