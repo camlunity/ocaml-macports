@@ -1,0 +1,11 @@
+--- dypgen.old/Makefile.config	2011-06-09 13:00:45.000000000 +0300
++++ dypgen/Makefile.config	2011-06-09 13:27:50.000000000 +0300
+@@ -8,6 +8,6 @@
+ DYPGENLIBDIR:=$(DESTDIR)$(OCAMLLIBDIR)
+ 
+ # this is the path where you want to install dypgen and dyp2gram.pl
+-BINDIR:=$(DESTDIR)/usr/bin
++BINDIR:=$(DESTDIR)/$(PREFIX)/bin
+ 
+-MANDIR:=$(DESTDIR)/usr/share/man/man1
++MANDIR:=$(DESTDIR)/$(PREFIX)/share/man/man1

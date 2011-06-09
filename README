@@ -21,6 +21,10 @@ Installing
 Available portfiles
 -------------------
 
+ * [caml-dypgen][] 20110328-1
+
+[caml-dypgen]: http://dypgen.free.fr/
+
 MacPorts
 --------
 

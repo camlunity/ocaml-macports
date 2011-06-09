@@ -1,0 +1,42 @@
+--- dypgen.old/Makefile	2011-06-09 13:00:45.000000000 +0300
++++ dypgen/Makefile	2011-06-09 13:44:41.000000000 +0300
+@@ -6,7 +6,7 @@
+ 	cd dyplib; $(MAKE)
+ 	cd dypgen; $(MAKE)
+ 
+-all:
++all: dyp
+ 	$(MAKE) dypgen
+ 	$(MAKE) examples
+ 
+@@ -22,12 +22,13 @@
+ 
+ #install with ocaml-findlib
+ install: install_opt
+-	install -D --mode=755 dypgen/dypgen $(BINDIR)
+-	install -D --mode=755 dyp2gram.pl $(BINDIR)/dyp2gram
+-	install -D --mode=644 doc/dypgen.1 $(MANDIR)/dypgen.1
+-	install -D --mode=644 doc/dypgen.1 $(MANDIR)/dypgen.opt.1
+-	install -D --mode=644 doc/dypgen.1 $(MANDIR)/dyp2gram.1
+-	cd dyplib; $(MAKE) install
++	install -d $(BINDIR) $(MANDIR)
++	install -m 0755 dypgen/dypgen $(BINDIR)/dypgen.ml
++	install -m 0755 dyp2gram.pl $(BINDIR)
++	install -m 0644 doc/dypgen.1 $(MANDIR)
++	install -m 0644 doc/dypgen.opt.1 $(MANDIR)
++	install -m 0644 doc/dyp2gram.1 $(MANDIR)
++	cd dyplib; $(MAKE) install DESTDIR=$(DESTDIR)
+ 
+ #install without ocaml-findlib
+ install2: install_opt
+@@ -40,8 +41,8 @@
+ 
+ ifdef CAMLOPT
+ install_opt:
+-	mkdir -p $(BINDIR)
+-	cp dypgen/dypgen.opt $(BINDIR)
++	install -d $(BINDIR)
++	install -m 0755 dypgen/dypgen.opt $(BINDIR)
+ else
+ install_opt:
+ endif

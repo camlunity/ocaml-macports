@@ -1,0 +1,16 @@
+--- dypgen.old/dyplib/Makefile	2011-06-09 13:00:45.000000000 +0300
++++ dypgen/dyplib/Makefile	2011-06-09 13:13:29.000000000 +0300
+@@ -19,10 +19,9 @@
+ prof:
+ endif
+ 
+-install: uninstall
+-	install -d $(DYPGENLIBDIR)
+-	$(OCAMLFIND) install -destdir $(DYPGENLIBDIR) dyp META dyp.cma dyp.cmxa dyp.a dyp.cmi
+-	chmod a-x $(DYPGENLIBDIR)/dyp/META #why is this needed ?
++install:
++	install -d $(DESTDIR)/`$(OCAMLFIND) printconf destdir`
++	$(OCAMLFIND) install -destdir $(DESTDIR)/`$(OCAMLFIND) printconf destdir` dyp META dyp.cma dyp.cmxa dyp.a dyp.cmi dyp.mli
+ 
+ uninstall:
+ 	- $(OCAMLFIND) remove -destdir $(DYPGENLIBDIR) dyp
