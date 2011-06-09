@@ -25,12 +25,14 @@ Available portfiles
  * [caml-dypgen][] 20110328-1
  * [caml-objsize][] 0.16
  * [caml-postgresql][] 1.16.0
+ * [caml-react][] 0.9.2
  * [caml-sqlite3][] 1.6.1
 
 [caml-camomile]: http://camomile.sourceforge.net/
 [caml-dypgen]: http://dypgen.free.fr/
 [caml-objsize]: http://forge.ocamlcore.org/projects/objsize/
 [caml-postgresql]: http://www.ocaml.info/home/ocaml_sources.html
+[caml-react]: http://erratique.ch/software/react
 [caml-sqlite3]: http://www.ocaml.info/home/ocaml_sources.html
 
 MacPorts
