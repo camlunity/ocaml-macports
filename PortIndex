@@ -1,2 +1,4 @@
+caml-sqlite3 345
+portdir devel/caml-sqlite3 description {OCaml bindings for SQLite 3} homepage http://www.ocaml.info/home/ocaml_sources.html epoch 0 platforms darwin name caml-sqlite3 depends_lib {port:ocaml port:caml-findlib port:sqlite3} license unknown long_description {{OCaml bindings for SQLite 3}} version 1.6.1 categories {devel ml databases} revision 0
 caml-dypgen 410
 portdir lang/caml-dypgen description {Self-extensible parsers and lexers for the Objective Caml programming language.} homepage http://dypgen.free.fr/ epoch 0 platforms darwin name caml-dypgen depends_lib {port:caml-findlib port:ocaml} license unknown long_description {{Self-extensible parsers and lexers for the Objective Caml programming language.}} version 20110328-1 categories {lang devel ml} revision 0
