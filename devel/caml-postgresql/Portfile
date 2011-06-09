@@ -1,0 +1,47 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+
+PortSystem          1.0
+
+name                caml-postgresql
+version             1.16.0
+revision            1
+categories          devel ml
+#maintainers         landonf openmaintainer
+description         OCaml-interface to the PostgreSQL-database
+long_description    This OCaml-library provides an interface to PostgreSQL \
+                    Almost all functionality available through the C-API \
+                    (libpq) is replicated in a type-safe way. This library \
+                    uses objects for representing database connections and \
+                    results of queries.
+
+homepage            http://www.ocaml.info/home/ocaml_sources.html
+platforms           darwin
+master_sites        http://www.ocaml.info/ocaml_sources/
+
+distname            postgresql-ocaml-${version}
+
+checksums           md5 c22c9c875419f1fe29605dc4b3166c91 \
+                    sha1 411c7a08ff770137315ce93ae08b87274fd38a9e \
+                    rmd160 3addfb513f9593a7fc9e79377ab43221c828204f
+
+depends_lib         port:ocaml \
+                    port:caml-findlib \
+                    port:postgresql83
+
+post-patch {
+    set ocaml_site_path [exec ocamlfind printconf destdir]
+
+    reinplace s|pg_config|${prefix}/lib/postgresql83/bin/pg_config|g \
+        ${worksrcpath}/Makefile.conf
+
+    reinplace       "s|\$(OCAMLFIND) install|\$(OCAMLFIND) install -destdir ${destroot}/${ocaml_site_path}|g" \
+                    ${worksrcpath}/OCamlMakefile
+}
+
+pre-destroot {
+    set ocaml_site_path [exec ocamlfind printconf destdir]
+    file mkdir ${destroot}/${ocaml_site_path}
+    file mkdir ${destroot}/${ocaml_site_path}/stublibs
+}
+
+use_configure        no

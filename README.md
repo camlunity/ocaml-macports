@@ -22,9 +22,11 @@ Available portfiles
 -------------------
 
  * [caml-dypgen][] 20110328-1
+ * [caml-postgresql][] 1.16.0
  * [caml-sqlite3][] 1.6.1
 
 [caml-dypgen]: http://dypgen.free.fr/
+[caml-postgresql]: http://www.ocaml.info/home/ocaml_sources.html
 [caml-sqlite3]: http://www.ocaml.info/home/ocaml_sources.html
 
 MacPorts
