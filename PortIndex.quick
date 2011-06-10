@@ -10,4 +10,5 @@ caml-text 3385
 caml-xmlm 3830
 ocaml-ogg 4527
 ocaml-vorbis 4993
-caml-dypgen 5425
+ocaml-xmlplaylist 5425
+caml-dypgen 5735

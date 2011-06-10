@@ -34,6 +34,7 @@ Available portfiles
  * [caml-xmlm][] 1.0.2
  * [ocaml-ogg][] 0.4.1
  * [ocaml-vorbis][] 0.5.1
+ * [ocaml-xmlplaylist][] 0.1.2
 
 [caml-camomile]: http://camomile.sourceforge.net/
 [caml-dypgen]: http://dypgen.free.fr/
@@ -48,6 +49,7 @@ Available portfiles
 [caml-xmlm]: http://erratique.ch/software/xmlm
 [ocaml-ogg]: http://savonet.sf.net
 [ocaml-vorbis]: http://savonet.sf.net
+[ocaml-xmlplaylist]: http://savonet.sf.net
 
 MacPorts
 --------
