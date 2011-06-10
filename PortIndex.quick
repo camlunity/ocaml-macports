@@ -7,4 +7,5 @@ caml-react 2113
 caml-sqlite3 2662
 caml-text 3024
 ocaml-ogg 3469
-caml-dypgen 3935
+ocaml-vorbis 3935
+caml-dypgen 4367
