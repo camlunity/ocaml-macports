@@ -10,9 +10,10 @@ caml-ssl 3531
 caml-text 3873
 caml-xmlm 4299
 ocaml-lastfm 4996
-ocaml-ogg 5319
-ocaml-vorbis 5766
-ocaml-xmlplaylist 6179
-ocamlsdl 6502
-caml-dypgen 7103
-tuareg-mode.el 7529
+ocaml-mad 5319
+ocaml-ogg 5725
+ocaml-vorbis 6172
+ocaml-xmlplaylist 6585
+ocamlsdl 6908
+caml-dypgen 7509
+tuareg-mode.el 7935
