@@ -22,7 +22,7 @@ checksums           md5     d996dfa94dfc199e5f9b1aef55f37ede \
                     rmd160  482c671814e3e2bde797c3deb924a5a2446db376
 
 configure.pre_args-delete --prefix=${prefix}
-configure.args      --enable-ssl --enable-react
+configure.args      --enable-ssl --enable-react --enable-text
 
 set ocamlfind_destdir ${destroot}/${prefix}/lib/ocaml/site-lib
 destroot.args       OCAMLFIND_DESTDIR="${ocamlfind_destdir}" OCAMLFIND_LDCONF=ignore
