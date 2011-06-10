@@ -1,0 +1,38 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+
+PortSystem          1.0
+
+name                caml-text
+version             0.4
+distname            ocaml-text-${version}
+categories          devel ml
+#maintainers         nomaintainer
+description         library for Unicode text in OCaml
+long_description    OCaml-Text is a library for dealing with text, \
+                    i.e. sequence of unicode characters, in a convenient way.
+platforms           darwin
+homepage            http://forge.ocamlcore.org/projects/ocaml-text/
+master_sites        http://forge.ocamlcore.org/frs/download.php/537/
+
+depends_lib         port:ocaml port:caml-findlib port:caml-pcre
+
+checksums           md5     5cd819fceb055ed00399ca39d9623096 \
+                    sha1    77676eee5286c775144e59dee126377b61282602 \
+                    rmd160  94d5d381dab5ee2f7a916ad9e9be3a9b5695252b
+
+# libiconv fix
+compiler.cpath      {}
+
+configure.pre_args-delete --prefix=${prefix}
+configure.args            --prefix ${prefix} --enable-pcre
+
+set ocamlfind_destdir ${destroot}${prefix}/lib/ocaml/site-lib
+destroot.args       OCAMLFIND_DESTDIR="${ocamlfind_destdir}" OCAMLFIND_LDCONF=ignore
+
+livecheck.type      regex
+livecheck.url       http://forge.ocamlcore.org/frs/?group_id=100
+livecheck.regex     {>text-(.*)\.tar\.gz}
+
+pre-destroot {
+    xinstall -d ${ocamlfind_destdir}/stublibs
+}

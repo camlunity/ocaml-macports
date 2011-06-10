@@ -29,6 +29,7 @@ Available portfiles
  * [caml-postgresql][] 1.16.0
  * [caml-react][] 0.9.2
  * [caml-sqlite3][] 1.6.1
+ * [caml-text][] 0.4
 
 [caml-camomile]: http://camomile.sourceforge.net/
 [caml-dypgen]: http://dypgen.free.fr/
@@ -38,6 +39,7 @@ Available portfiles
 [caml-postgresql]: http://www.ocaml.info/home/ocaml_sources.html
 [caml-react]: http://erratique.ch/software/react
 [caml-sqlite3]: http://www.ocaml.info/home/ocaml_sources.html
+[caml-text]: http://ocaml-text.forge.ocamlcore.org/
 
 MacPorts
 --------

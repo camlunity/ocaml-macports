@@ -5,4 +5,5 @@ caml-objsize 1181
 caml-postgresql 1523
 caml-react 2113
 caml-sqlite3 2662
-caml-dypgen 3024
+caml-text 3024
+caml-dypgen 3469
