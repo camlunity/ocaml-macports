@@ -1,0 +1,34 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+
+PortSystem          1.0
+
+name                ocaml-ogg
+version             0.4.1
+categories          devel ml multimedia
+#maintainers         rastageeks.org:toots
+description         OCaml bindings for the libogg multimedia library
+long_description    This port contains an O'Caml interface for the Ogg \
+                    bitstream library, otherwise known as libogg.
+homepage            http://savonet.sf.net/
+platforms           darwin
+master_sites        sourceforge:savonet
+
+checksums           md5  566feb99dca8e324f72a646e66029f05 \
+                    sha1  efd4745cbd6b7165f453df8f6b23acccd255cbb9 \
+                    rmd160  14fcdeb8ecf34fb147f28ff97927101c85217793
+
+depends_build       port:pkgconfig
+depends_lib         port:ocaml \
+                    port:caml-findlib \
+                    port:libogg
+
+configure.pkg_config    ${prefix}/bin/pkg-config
+
+build.args          LIBDIRS=${prefix}/lib
+
+pre-destroot {
+    set ocamlfind_destdir "${destroot}[exec ${prefix}/bin/ocamlfind printconf destdir]"
+    file mkdir $ocamlfind_destdir/stublibs
+    reinplace "s#\$(OCAMLFIND_INSTFLAGS)# -ldconf ignore -destdir '$ocamlfind_destdir'#g" \
+        ${worksrcpath}/src/OCamlMakefile
+}
