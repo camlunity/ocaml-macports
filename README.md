@@ -36,6 +36,7 @@ Available portfiles
  * [ocaml-lastfm][] 0.3.0
  * [ocaml-mad][] 0.4.1
  * [ocaml-ogg][] 0.4.1
+ * [ocaml-theora][] 0.2.0
  * [ocaml-vorbis][] 0.5.1
  * [ocaml-xmlplaylist][] 0.1.2
  * [ocamlsdl][] 0.8.0
@@ -56,6 +57,7 @@ Available portfiles
 [ocaml-lastfm]: http://savonet.sf.net
 [ocaml-mad]: http://savonet.sf.net
 [ocaml-ogg]: http://savonet.sf.net
+[ocaml-theora]: http://savonet.sf.net
 [ocaml-vorbis]: http://savonet.sf.net
 [ocaml-xmlplaylist]: http://savonet.sf.net
 [ocamlsdl]: http://ocamlsdl.sourceforge.net/home.html

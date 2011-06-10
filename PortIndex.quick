@@ -12,8 +12,9 @@ caml-xmlm 4299
 ocaml-lastfm 4996
 ocaml-mad 5319
 ocaml-ogg 5725
-ocaml-vorbis 6172
-ocaml-xmlplaylist 6585
-ocamlsdl 6908
-caml-dypgen 7509
-tuareg-mode.el 7935
+ocaml-theora 6172
+ocaml-vorbis 6635
+ocaml-xmlplaylist 7048
+ocamlsdl 7371
+caml-dypgen 7972
+tuareg-mode.el 8398
