@@ -1,0 +1,54 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+
+PortSystem          1.0
+
+name                caml-ounit
+version             1.1.0
+categories          devel ml
+#maintainers         landonf openmaintainer
+description         Unit test framework for OCaml
+long_description    OUnit is a unit test framework for OCaml. \
+                    It allows one to easily create unit-tests for OCaml code. \
+                    It is based on HUnit, a unit testing framework for Haskell. \
+                    It is similar to JUnit, and other XUnit testing frameworks. 
+
+homepage            http://ounit.forge.ocamlcore.org/
+platforms           darwin
+master_sites        https://forge.ocamlcore.org/frs/download.php/495/
+
+distname            ounit-${version}
+
+checksums           md5     bf82bd7f8853cd9a1aff7be716192643 \
+                    sha1    e477f8a1b4fcd6a838cbbc04450a80b1cea3456c \
+                    rmd160  f7d82446970f40eccc917a3ee57e7d6526b1b177
+
+depends_lib         port:ocaml \
+                    port:caml-findlib
+
+livecheck.type      regex
+livecheck.regex     {>ounit-(.*)\.tar\.gz}
+
+use_configure       no
+use_parallel_build  no
+
+set ocamlfind_destdir ${destroot}/${prefix}/lib/ocaml/site-lib
+destroot.args       OCAMLFIND_DESTDIR="${ocamlfind_destdir}" OCAMLFIND_LDCONF=ignore
+build.target        all doc
+
+post-patch {
+    set ocaml_site_path [exec ocamlfind printconf destdir]
+    reinplace       "s|\$(OCAMLFIND) install|\$(OCAMLFIND) install -destdir ${destroot}/${ocaml_site_path}|g" \
+                    ${worksrcpath}/Makefile
+}
+
+pre-destroot {
+    set ocaml_site_path [exec ocamlfind printconf destdir]
+    file mkdir ${destroot}/${ocaml_site_path}
+}
+
+post-destroot { 
+    xinstall -d ${ocamlfind_destdir}/stublibs
+    xinstall -d -755 ${destroot}${prefix}/share/doc/${name} 
+    eval xinstall -m 644 [glob ${worksrcpath}/_build/src/api-ounit.docdir/*.html] \
+        ${destroot}${prefix}/share/doc/${name} 
+} 

@@ -26,6 +26,7 @@ Available portfiles
  * [caml-iteratees][] 0.3
  * [caml-lwt][] 2.3.0
  * [caml-objsize][] 0.16
+ * [caml-ounit][] 1.1.0
  * [caml-postgresql][] 1.16.0
  * [caml-react][] 0.9.2
  * [caml-sqlite3][] 1.6.1
@@ -43,6 +44,7 @@ Available portfiles
 [caml-iteratees]: http://ocaml-iteratees.forge.ocamlcore.org/
 [caml-lwt]: http://ocsigen.org/lwt
 [caml-objsize]: http://forge.ocamlcore.org/projects/objsize/
+[caml-ounit]: http://ounit.forge.ocamlcore.org/
 [caml-postgresql]: http://www.ocaml.info/home/ocaml_sources.html
 [caml-react]: http://erratique.ch/software/react
 [caml-sqlite3]: http://www.ocaml.info/home/ocaml_sources.html
