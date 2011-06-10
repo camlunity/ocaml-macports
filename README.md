@@ -33,6 +33,7 @@ Available portfiles
  * [caml-ssl][] 0.4.5
  * [caml-text][] 0.4
  * [caml-xmlm][] 1.0.2
+ * [ocaml-faad][] 0.2.0
  * [ocaml-lame][] 0.2.4
  * [ocaml-lastfm][] 0.3.0
  * [ocaml-mad][] 0.4.1
@@ -55,6 +56,7 @@ Available portfiles
 [caml-ssl]: http://savonet.sf.net
 [caml-text]: http://ocaml-text.forge.ocamlcore.org/
 [caml-xmlm]: http://erratique.ch/software/xmlm
+[ocaml-faad]: http://savonet.sf.net
 [ocaml-lame]: http://savonet.sf.net
 [ocaml-lastfm]: http://savonet.sf.net
 [ocaml-mad]: http://savonet.sf.net
