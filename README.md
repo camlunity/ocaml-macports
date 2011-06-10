@@ -29,6 +29,7 @@ Available portfiles
  * [caml-postgresql][] 1.16.0
  * [caml-react][] 0.9.2
  * [caml-sqlite3][] 1.6.1
+ * [caml-ssl][] 0.4.5
  * [caml-text][] 0.4
  * [ocaml-ogg][] 0.4.1
  * [ocaml-vorbis][] 0.5.1
@@ -41,6 +42,7 @@ Available portfiles
 [caml-postgresql]: http://www.ocaml.info/home/ocaml_sources.html
 [caml-react]: http://erratique.ch/software/react
 [caml-sqlite3]: http://www.ocaml.info/home/ocaml_sources.html
+[caml-ssl]: http://savonet.sf.net
 [caml-text]: http://ocaml-text.forge.ocamlcore.org/
 [ocaml-ogg]: http://savonet.sf.net
 [ocaml-vorbis]: http://savonet.sf.net

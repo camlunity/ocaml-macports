@@ -12,6 +12,8 @@ caml-react 534
 portdir devel/caml-react description {Functional reactive progreamming for OCaml} homepage http://erratique.ch/software/react epoch 0 platforms darwin name caml-react depends_lib port:ocaml license unknown long_description {React is an OCaml module for functional reactive programming (FRP). It provides support to program with time varying values : applicative events and signals. React doesn't define any primitive event or signal, this lets the client chooses the concrete timeline.} version 0.9.2 categories {devel ml} revision 0
 caml-sqlite3 345
 portdir devel/caml-sqlite3 description {OCaml bindings for SQLite 3} homepage http://www.ocaml.info/home/ocaml_sources.html epoch 0 platforms darwin name caml-sqlite3 depends_lib {port:ocaml port:caml-findlib port:sqlite3} license unknown long_description {{OCaml bindings for SQLite 3}} version 1.6.1 categories {devel ml databases} revision 0
+caml-ssl 348
+variants universal portdir devel/caml-ssl description {SSL bindings for OCaml} homepage http://savonet.sf.net epoch 0 platforms darwin name caml-ssl depends_lib {port:ocaml port:caml-findlib} long_description {SSL bindings for OCaml to use secure connections via the OpenSSL library.} license unknown categories {devel ml} version 0.4.5 revision 0
 caml-text 431
 variants universal portdir devel/caml-text description {library for Unicode text in OCaml} homepage http://forge.ocamlcore.org/projects/ocaml-text/ epoch 0 platforms darwin name caml-text depends_lib {port:ocaml port:caml-findlib port:caml-pcre} long_description {OCaml-Text is a library for dealing with text, i.e. sequence of unicode characters, in a convenient way.} license unknown categories {devel ml} version 0.4 revision 0
 ocaml-ogg 452
