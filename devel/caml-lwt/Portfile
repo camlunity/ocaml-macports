@@ -1,0 +1,37 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+
+PortSystem          1.0
+
+name                caml-lwt
+version             2.3.0
+distname            lwt-${version}
+categories          devel ml
+#maintainers         nomaintainer
+description         Cooperative threading library for OCaml
+long_description    LWT is a lightweight thread library for OCaml to implement \
+                    co-operative concurrency.
+homepage            http://ocsigen.org/lwt
+platforms           darwin
+master_sites        http://ocsigen.org/download/
+
+depends_lib         port:ocaml port:caml-findlib port:caml-ssl \
+                    port:caml-react port:caml-text port:libev
+
+checksums           md5     d996dfa94dfc199e5f9b1aef55f37ede \
+                    sha1    10a35aecd6ebe312e939872307f7daa71f51d15a \
+                    rmd160  482c671814e3e2bde797c3deb924a5a2446db376
+
+use_configure       no
+
+set ocamlfind_destdir ${destroot}${prefix}/lib/ocaml/site-lib
+destroot.post_args  DESTDIR="${destroot}" OCAMLFIND_DESTDIR="${ocamlfind_destdir}"
+build.target        ""
+
+livecheck.type      regex
+livecheck.url       http://ocsigen.org/download/
+livecheck.version   ${version}
+livecheck.regex     {>lwt-(.*)\.tar\.gz\.asc}
+
+pre-destroot {
+    xinstall -d ${ocamlfind_destdir}
+}

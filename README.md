@@ -23,12 +23,14 @@ Available portfiles
 
  * [caml-camomile][] 0.8.3
  * [caml-dypgen][] 20110328-1
+ * [caml-lwt][] 2.3.0
  * [caml-objsize][] 0.16
  * [caml-postgresql][] 1.16.0
  * [caml-react][] 0.9.2
  * [caml-sqlite3][] 1.6.1
 
 [caml-camomile]: http://camomile.sourceforge.net/
+[caml-lwt]: http://ocsigen.org/lwt
 [caml-dypgen]: http://dypgen.free.fr/
 [caml-objsize]: http://forge.ocamlcore.org/projects/objsize/
 [caml-postgresql]: http://www.ocaml.info/home/ocaml_sources.html
