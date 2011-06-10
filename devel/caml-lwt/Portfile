@@ -21,11 +21,11 @@ checksums           md5     d996dfa94dfc199e5f9b1aef55f37ede \
                     sha1    10a35aecd6ebe312e939872307f7daa71f51d15a \
                     rmd160  482c671814e3e2bde797c3deb924a5a2446db376
 
-use_configure       no
+configure.pre_args-delete --prefix=${prefix}
+configure.args      --enable-ssl --enable-react
 
-set ocamlfind_destdir ${destroot}`ocamlfind printconf destdir`
-destroot.pre_args   DESTDIR="${destroot}" OCAMLFIND_DESTDIR="${ocamlfind_destdir}"
-destroot.post_args  DESTDIR="${destroot}" OCAMLFIND_DESTDIR="${ocamlfind_destdir}"
+set ocamlfind_destdir ${destroot}/${prefix}/lib/ocaml/site-lib
+destroot.args       OCAMLFIND_DESTDIR="${ocamlfind_destdir}" OCAMLFIND_LDCONF=ignore
 build.target        ""
 
 livecheck.type      regex

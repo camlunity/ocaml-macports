@@ -1,7 +1,7 @@
 caml-camomile 0
 caml-lwt 324
-caml-objsize 751
-caml-postgresql 1093
-caml-react 1683
-caml-sqlite3 2232
-caml-dypgen 2594
+caml-objsize 770
+caml-postgresql 1112
+caml-react 1702
+caml-sqlite3 2251
+caml-dypgen 2613
