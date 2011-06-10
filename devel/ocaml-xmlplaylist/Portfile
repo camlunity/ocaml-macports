@@ -5,7 +5,7 @@ PortSystem          1.0
 name                ocaml-xmlplaylist
 version             0.1.2
 categories          devel ml
-#maintainers         nomaintainer
+maintainers         ftrvxmtrx@gmail.com
 description         XML playlist for OCaml
 homepage            http://savonet.sf.net
 platforms           darwin
