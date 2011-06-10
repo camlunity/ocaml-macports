@@ -1,0 +1,8 @@
+diff -wruN xmlm-1.0.2.old/src/META xmlm-1.0.2/src/META
+--- xmlm-1.0.2.old/src/META	2011-06-10 17:09:20.000000000 +0300
++++ xmlm-1.0.2/src/META	2011-06-10 17:09:28.000000000 +0300
+@@ -3,4 +3,3 @@
+ archive(byte) = "xmlm.cmo"
+ archive(native) = "xmlm.cmx"
+ archive(plugin,native) = "xmlm.cmxs"
+-directory = "+xmlm"
