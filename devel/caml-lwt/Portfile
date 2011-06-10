@@ -23,7 +23,8 @@ checksums           md5     d996dfa94dfc199e5f9b1aef55f37ede \
 
 use_configure       no
 
-set ocamlfind_destdir ${destroot}${prefix}/lib/ocaml/site-lib
+set ocamlfind_destdir ${destroot}`ocamlfind printconf destdir`
+destroot.pre_args   DESTDIR="${destroot}" OCAMLFIND_DESTDIR="${ocamlfind_destdir}"
 destroot.post_args  DESTDIR="${destroot}" OCAMLFIND_DESTDIR="${ocamlfind_destdir}"
 build.target        ""
 
