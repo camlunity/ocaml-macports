@@ -37,6 +37,7 @@ Available portfiles
  * [ocaml-ogg][] 0.4.1
  * [ocaml-vorbis][] 0.5.1
  * [ocaml-xmlplaylist][] 0.1.2
+ * [ocamlsdl][] 0.8.0
  * [tuareg-mode.el][] 2.0.4
 
 [caml-camomile]: http://camomile.sourceforge.net/
@@ -55,6 +56,7 @@ Available portfiles
 [ocaml-ogg]: http://savonet.sf.net
 [ocaml-vorbis]: http://savonet.sf.net
 [ocaml-xmlplaylist]: http://savonet.sf.net
+[ocamlsdl]: http://ocamlsdl.sourceforge.net/home.html
 [tuareg-mode.el]: https://forge.ocamlcore.org/projects/tuareg/
 
 MacPorts

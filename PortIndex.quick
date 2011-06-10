@@ -13,5 +13,6 @@ ocaml-lastfm 5040
 ocaml-ogg 5382
 ocaml-vorbis 5848
 ocaml-xmlplaylist 6280
-caml-dypgen 6622
-tuareg-mode.el 7048
+ocamlsdl 6622
+caml-dypgen 7242
+tuareg-mode.el 7668
