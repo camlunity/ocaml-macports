@@ -34,5 +34,5 @@ livecheck.version   ${version}
 livecheck.regex     {>lwt-(.*)\.tar\.gz\.asc}
 
 pre-destroot {
-    xinstall -d ${ocamlfind_destdir}
+    xinstall -d ${ocamlfind_destdir}/stublibs
 }
