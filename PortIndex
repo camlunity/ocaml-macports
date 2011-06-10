@@ -1,5 +1,7 @@
 caml-camomile 306
 variants universal portdir devel/caml-camomile description {OCaml module to convert strings to and from various encodings} homepage http://camomile.sf.net/ epoch 0 platforms darwin name caml-camomile depends_lib {port:ocaml port:caml-findlib} license unknown categories {devel ml} version 0.8.3 revision 0
+caml-iteratees 392
+portdir devel/caml-iteratees description {OCaml port of Iteratees} homepage http://ocaml-iteratees.forge.ocamlcore.org/ epoch 0 platforms darwin name caml-iteratees depends_lib {port:ocaml port:caml-findlib port:caml-lwt} license unknown long_description {OCaml port of Iteratees (safe, practical, declarative input processing, by Oleg Kiselyov)} version 0.3 categories {devel ml} revision 0
 caml-lwt 433
 variants universal portdir devel/caml-lwt description {Cooperative threading library for OCaml} homepage http://ocsigen.org/lwt epoch 0 platforms darwin name caml-lwt depends_lib {port:ocaml port:caml-findlib port:caml-ssl port:caml-react port:caml-text port:libev} long_description {LWT is a lightweight thread library for OCaml to implement co-operative concurrency.} license unknown categories {devel ml} version 2.3.0 revision 0
 caml-objsize 325
