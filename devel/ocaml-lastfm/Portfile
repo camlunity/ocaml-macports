@@ -1,0 +1,29 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+
+PortSystem          1.0
+
+name                ocaml-lastfm
+version             0.3.0
+categories          devel ml
+maintainers         ftrvxmtrx@gmail.com
+description         OCaml bindings for Lastfm API
+homepage            http://savonet.sf.net
+platforms           darwin
+master_sites        sourceforge:savonet
+
+checksums           md5     b93778a4b67696b9bc22e3d68f8d0f5d \
+                    sha1    c1c8783c3cfc9520bd8a0f1250488edbb3a55b9f \
+                    rmd160  753b77c1d9a9b64c2d526affc32ad3ef2fa67af4
+
+depends_lib         port:ocaml port:caml-findlib port:ocaml-xmlplaylist
+
+set ocamlfind_destdir ${destroot}${prefix}/lib/ocaml/site-lib
+destroot.env        OCAMLFIND_INSTFLAGS="-ldconf ignore -destdir $ocamlfind_destdir"
+
+livecheck.type      regex
+livecheck.url       http://sf.net/api/file/index/project-id/89802/rss?path=%2Focaml-lastfm
+livecheck.regex     {ocaml-lastfm-(.*)\.tar\.gz}
+
+pre-destroot {
+    file mkdir $ocamlfind_destdir/stublibs
+}

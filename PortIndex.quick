@@ -8,7 +8,8 @@ caml-sqlite3 2662
 caml-ssl 3024
 caml-text 3385
 caml-xmlm 3830
-ocaml-ogg 4527
-ocaml-vorbis 4993
-ocaml-xmlplaylist 5425
-caml-dypgen 5735
+ocaml-lastfm 4527
+ocaml-ogg 4837
+ocaml-vorbis 5303
+ocaml-xmlplaylist 5735
+caml-dypgen 6045
