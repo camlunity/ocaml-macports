@@ -23,6 +23,7 @@ depends_lib         port:ocaml \
                     port:libvorbis
 
 configure.pkg_config    ${prefix}/bin/pkg-config
+universal_variant       no
 
 build.args          LIBDIRS=${prefix}/lib
 

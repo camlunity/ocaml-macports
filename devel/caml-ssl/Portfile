@@ -21,6 +21,7 @@ checksums           md5     a75899dabd555b7196bef9124385e65e \
 
 depends_lib         port:ocaml port:caml-findlib
 use_parallel_build  no
+universal_variant   no
 
 set ocamlfind_destdir ${destroot}${prefix}/lib/ocaml/site-lib
 destroot.env        OCAMLFIND_INSTFLAGS="-ldconf ignore -destdir $ocamlfind_destdir"

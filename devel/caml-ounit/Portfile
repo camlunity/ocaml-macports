@@ -30,6 +30,7 @@ livecheck.regex     {>ounit-(.*)\.tar\.gz}
 
 use_configure       no
 use_parallel_build  no
+universal_variant   no
 
 set ocamlfind_destdir ${destroot}/${prefix}/lib/ocaml/site-lib
 destroot.args       OCAMLFIND_DESTDIR="${ocamlfind_destdir}" OCAMLFIND_LDCONF=ignore

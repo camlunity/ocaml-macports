@@ -21,6 +21,7 @@ checksums           md5     e877b41c9263282f8e9b62f46d01d8a1 \
                     rmd160  9677e3495239ca984e5cc2c332eb6e3bc31af1cf
 
 use_configure       no
+universal_variant   no
 
 patchfiles          patch-Makefile.diff
 patch.pre_args      -p1

@@ -31,6 +31,7 @@ configure.cc        {}
 
 build.args          LIBDIRS=${prefix}/lib
 use_parallel_build  no
+universal_variant   no
 
 proc ocamlfind_destdir {} {
     # only bother calculating this darn thing once

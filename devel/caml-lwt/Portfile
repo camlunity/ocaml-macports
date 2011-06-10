@@ -27,6 +27,7 @@ configure.args      --enable-ssl --enable-react --enable-text
 set ocamlfind_destdir ${destroot}/${prefix}/lib/ocaml/site-lib
 destroot.args       OCAMLFIND_DESTDIR="${ocamlfind_destdir}" OCAMLFIND_LDCONF=ignore
 build.target        ""
+universal_variant   no
 
 livecheck.type      regex
 livecheck.url       http://ocsigen.org/download/

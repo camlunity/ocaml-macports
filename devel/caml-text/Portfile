@@ -28,6 +28,7 @@ configure.args            --prefix ${prefix} --enable-pcre
 
 set ocamlfind_destdir ${destroot}${prefix}/lib/ocaml/site-lib
 destroot.args       OCAMLFIND_DESTDIR="${ocamlfind_destdir}" OCAMLFIND_LDCONF=ignore
+universal_variant   no
 
 livecheck.type      regex
 livecheck.url       http://forge.ocamlcore.org/frs/?group_id=100

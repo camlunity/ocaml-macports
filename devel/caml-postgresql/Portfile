@@ -27,6 +27,7 @@ checksums           md5 c22c9c875419f1fe29605dc4b3166c91 \
 depends_lib         port:ocaml \
                     port:caml-findlib \
                     port:postgresql83
+universal_variant   no
 
 post-patch {
     set ocaml_site_path [exec ocamlfind printconf destdir]

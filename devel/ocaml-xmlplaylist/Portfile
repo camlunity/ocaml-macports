@@ -16,6 +16,7 @@ checksums           md5     6c7b07875c16e843c2a79717f7ef6b39 \
                     rmd160  00b92643d7a5c8801354622db9bebe92562affda
 
 depends_lib         port:ocaml port:caml-findlib port:caml-xmlm
+universal_variant   no
 
 configure.args      --disable-ldconf
 

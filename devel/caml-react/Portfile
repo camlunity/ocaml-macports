@@ -28,6 +28,7 @@ checksums           md5     ecbe0fa4d7d0fd1076cce5decf7a86b7 \
 
 use_configure       no
 use_parallel_build  no
+universal_variant   no
 
 build.cmd           "sh ./build"
 build.target        ""

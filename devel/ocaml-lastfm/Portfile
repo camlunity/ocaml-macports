@@ -19,6 +19,7 @@ depends_lib         port:ocaml port:caml-findlib port:ocaml-xmlplaylist
 
 set ocamlfind_destdir ${destroot}${prefix}/lib/ocaml/site-lib
 destroot.env        OCAMLFIND_INSTFLAGS="-ldconf ignore -destdir $ocamlfind_destdir"
+universal_variant   no
 
 livecheck.type      regex
 livecheck.url       http://sf.net/api/file/index/project-id/89802/rss?path=%2Focaml-lastfm

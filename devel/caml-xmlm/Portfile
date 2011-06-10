@@ -35,6 +35,7 @@ depends_lib         port:ocaml \
                     port:caml-findlib
 
 use_configure       no
+universal_variant   no
 
 build.cmd           ./build
 build.target

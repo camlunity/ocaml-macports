@@ -24,7 +24,7 @@ depends_lib         port:caml-findlib \
 patchfiles          patch-Makefile.diff patch-Makefile.config.diff patch-dyplib-Makefile.diff
 
 use_configure       no
-
+universal_variant   no
 use_parallel_build  no
 
 destroot.args       DESTDIR=${destroot} PREFIX=${prefix}
