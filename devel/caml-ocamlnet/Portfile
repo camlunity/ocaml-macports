@@ -3,7 +3,7 @@
 PortSystem          1.0
 
 name                caml-ocamlnet
-version             3.3.1
+version             3.3.3
 categories          devel ml
 #maintainers         landonf openmaintainer
 description         Internet protocols and helper data structures for OCaml.
@@ -20,9 +20,9 @@ master_sites        http://download.camlcity.org/download/
 
 distname            ocamlnet-${version}
 
-checksums           md5 be7d9ce0d610989ce1399b6c014416d1 \
-                    sha1 bc71ce344a13c70cee446999d4cd543b5f330dbc \
-                    rmd160 60e5b577f30d7cc848b2df14407b807979879dbf
+checksums           md5 c99f14dd94041d2b10eade55615a3c0b \
+                    sha1 23234ccbc3522b833029ae873730b876b73a3638 \
+                    rmd160 df1c8856a8e8f30a0638a976a208dd311c33b9a3
 
 
 depends_lib         port:ocaml \

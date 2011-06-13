@@ -26,7 +26,7 @@ Available portfiles
  * [caml-iteratees][] 0.3
  * [caml-lwt][] 2.3.0
  * [caml-objsize][] 0.16
- * [caml-ocamlnet][] 3.3.1
+ * [caml-ocamlnet][] 3.3.3
  * [caml-ounit][] 1.1.0
  * [caml-postgresql][] 1.16.0
  * [caml-react][] 0.9.2
