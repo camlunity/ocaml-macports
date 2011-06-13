@@ -15,8 +15,8 @@ Installing
 
 #### Insert an URL pointing to the ocaml-ports directory *before* the rsync URL as shown:
 
-    $ file:///Users/xavier/work/ocaml-macports
-    $ rsync://rsync.macports.org/release/ports [default]
+    file:///Users/xavier/work/ocaml-macports
+    rsync://rsync.macports.org/release/ports [default]
 
 Available portfiles
 -------------------
