@@ -22,7 +22,7 @@ Available portfiles
 -------------------
 
  * [caml-camomile][] 0.8.3
- * [caml-dypgen][] 20110328-1
+ * [caml-dypgen][] 20110618-1
  * [caml-iteratees][] 0.3
  * [caml-lwt][] 2.3.0
  * [caml-objsize][] 0.16

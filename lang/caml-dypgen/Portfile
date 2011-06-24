@@ -2,7 +2,7 @@
 
 PortSystem          1.0
 name                caml-dypgen
-version             20110328-1
+version             20110618-1
 categories          lang devel ml
 platforms           darwin
 #maintainers         mww openmaintainer
@@ -14,9 +14,9 @@ master_sites        ${homepage}
 distname            dypgen-${version}
 use_bzip2           yes
 
-checksums           md5     7c6fe5d7d59e22e85e135be77591a2dd \
-                    sha1    fb9728e13e6d2491ed1b14d6c68e19e8f8011287 \
-                    rmd160  16d164a43732419f0af6c1a0431fc615c77d1b05
+checksums           md5     caf4991876c0beae467f032fab734886 \
+                    sha1    1ebad43124ee8956b5ae02a0ce8ab88ad708d8da \
+                    rmd160  496fbf02b04cca09bee5b4ae2e12b68b7daf52c2
 
 depends_lib         port:caml-findlib \
                     port:ocaml
