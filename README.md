@@ -18,6 +18,10 @@ Installing
     file:///Users/xavier/work/ocaml-macports
     rsync://rsync.macports.org/release/ports [default]
 
+#### Install caml-findlib
+
+    $ sudo port install caml-findlib
+
 Available portfiles
 -------------------
 
