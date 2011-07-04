@@ -40,7 +40,7 @@ use_parallel_build  no
 set ocamlfind_destdir ${destroot}${prefix}/lib/ocaml/site-lib
 
 destroot.target     install
-destroot.destdir    DESTDIR=${ocamlfind_destdir}
+destroot.destdir    DESTDIR=${ocamlfind_destdir} DOCROOT=${destroot}${prefix}/share/doc/ocaml-batteries
 
 pre-destroot {
     file mkdir $ocamlfind_destdir
