@@ -25,6 +25,7 @@ Installing
 Available portfiles
 -------------------
 
+ * [caml-batteries][] 1.3.0
  * [caml-camomile][] 0.8.3
  * [caml-dypgen][] 20110618-1
  * [caml-iteratees][] 0.3
@@ -49,6 +50,7 @@ Available portfiles
  * [ocamlsdl][] 0.8.0
  * [tuareg-mode.el][] 2.0.4
 
+[caml-batteries]: https://github.com/ocaml-batteries-team/batteries-included/
 [caml-camomile]: http://camomile.sourceforge.net/
 [caml-dypgen]: http://dypgen.free.fr/
 [caml-iteratees]: http://ocaml-iteratees.forge.ocamlcore.org/

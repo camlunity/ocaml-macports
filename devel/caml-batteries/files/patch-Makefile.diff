@@ -1,0 +1,23 @@
+--- batteries-1.3.0.orig/Makefile
++++ batteries-1.3.0/Makefile
+@@ -105,6 +105,9 @@
+ ifeq ($(CAMVER),0.8.2)
+ 	CAMFIX=camomile82
+ endif
++ifeq ($(CAMVER),0.8.3)
++	CAMFIX=camomile83
++endif
+ ifeq ($(CAMVER),0.8.1)
+ 	CAMFIX=camomile81
+ endif
+@@ -127,6 +130,10 @@
+ camomile82:
+ 	cp -f src/batCamomile-0.8.2.ml src/batCamomile.ml
+ 
++#replace batcamomile with a version appropriate for camomile 0.8.3
++camomile83:
++	cp -f src/batCamomile-0.8.2.ml src/batCamomile.ml
++
+ #replace batcamomile with a version appropriate for camomile 0.8.1
+ camomile81:
+ 	cp -f src/batCamomile-0.8.1.ml src/batCamomile.ml
