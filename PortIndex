@@ -41,7 +41,7 @@ depends_build port:pkgconfig portdir devel/ocaml-theora description {OCaml bindi
 ocaml-vorbis 396
 depends_build port:pkgconfig portdir devel/ocaml-vorbis description {OCaml bindings for the vorbis audio library} homepage http://savonet.sf.net/ epoch 0 platforms darwin name ocaml-vorbis depends_lib {port:ocaml port:caml-findlib port:ocaml-ogg port:libvorbis} license unknown long_description {{OCaml bindings for the vorbis audio library}} categories {devel ml audio} version 0.6.0 revision 0
 ocaml-xmlplaylist 301
-portdir devel/ocaml-xmlplaylist description {XML playlist for OCaml} homepage http://savonet.sf.net epoch 0 platforms darwin name ocaml-xmlplaylist depends_lib {port:ocaml port:caml-findlib port:caml-xmlm} license unknown maintainers ftrvxmtrx@gmail.com version 0.1.2 categories {devel ml} revision 0
+portdir devel/ocaml-xmlplaylist description {XML playlist for OCaml} homepage http://savonet.sf.net epoch 0 platforms darwin name ocaml-xmlplaylist depends_lib {port:ocaml port:caml-findlib port:caml-xmlm} license unknown maintainers ftrvxmtrx@gmail.com version 0.1.3 categories {devel ml} revision 0
 ocamlsdl 606
 portdir devel/ocamlsdl description {OCaml bindings for SDL} homepage http://ocamlsdl.sourceforge.net epoch 0 platforms darwin name ocamlsdl depends_lib {port:libsdl_image port:libsdl_mixer port:libsdl_ttf port:ocaml port:caml-findlib port:lablgl} license unknown long_description {SDL (Simple DirectMedia Layer) is a generic API that provides low level access to audio, keyboard, mouse, and display framebuffer across multiple platforms. OCamlSDL is an OCaml interface to the SDL and might be used to write multimedia applications in Objective Caml.} version 0.8.0 categories {devel multimedia} revision 0
 caml-dypgen 410
