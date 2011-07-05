@@ -1,0 +1,34 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+
+PortSystem          1.0
+
+name                ocaml-taglib
+version             0.1.4
+categories          devel ml audio
+#maintainers         rastageeks.org:toots
+description         OCaml bindings for taglib
+long_description    This port contains an O'Caml interface for the TagLib \
+                    Audio Meta-Data Library, otherwise known as taglib.
+homepage            http://savonet.sf.net/
+platforms           darwin
+master_sites        sourceforge:savonet
+
+checksums           md5  1665f9bfb247ec40c0e12db3daad23c9 \
+                    sha1  327c19f5f3eeedfa81e4939e350c624ab36c3942 \
+                    rmd160  46ba01f1650a94d890816b264212a1ae0c7bd73f
+
+depends_build       port:pkgconfig
+depends_lib         port:ocaml \
+                    port:caml-findlib \
+                    port:taglib
+
+configure.pkg_config    ${prefix}/bin/pkg-config
+
+build.args          LIBDIRS=${prefix}/lib
+
+pre-destroot {
+  set ocamlfind_destdir "${destroot}[exec ${prefix}/bin/ocamlfind printconf destdir]"
+  file mkdir $ocamlfind_destdir
+  reinplace "s#\$(OCAMLFIND_INSTFLAGS)# -ldconf ignore -destdir '$ocamlfind_destdir'#g" \
+    ${worksrcpath}/src/OCamlMakefile
+}

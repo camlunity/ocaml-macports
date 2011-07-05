@@ -46,6 +46,7 @@ Available portfiles
  * [ocaml-lastfm][] 0.3.0
  * [ocaml-mad][] 0.4.2
  * [ocaml-ogg][] 0.4.2
+ * [ocaml-taglib][] 1.1.4
  * [ocaml-theora][] 0.3.0
  * [ocaml-vorbis][] 0.6.0
  * [ocaml-xmlplaylist][] 0.1.3
@@ -73,6 +74,7 @@ Available portfiles
 [ocaml-lastfm]: http://savonet.sf.net
 [ocaml-mad]: http://savonet.sf.net
 [ocaml-ogg]: http://savonet.sf.net
+[ocaml-taglib]: http://savonet.sf.net
 [ocaml-theora]: http://savonet.sf.net
 [ocaml-vorbis]: http://savonet.sf.net
 [ocaml-xmlplaylist]: http://savonet.sf.net
