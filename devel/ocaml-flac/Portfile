@@ -1,0 +1,35 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+
+PortSystem          1.0
+
+name                ocaml-flac
+version             0.1.0
+categories          devel ml multimedia
+maintainers         ftrvxmtrx@gmail.com
+description         OCaml bindings for FLAC
+long_description    $description
+homepage            http://savonet.sf.net/
+platforms           darwin
+master_sites        sourceforge:savonet
+
+checksums           md5  cbe73d8494f4db74520f9334c0130c0e \
+                    sha1  1e12568d283df1e6413d3ac8216b9a3b0bda7141 \
+                    rmd160 7b32c46eb5f500c25d0729e627e1852ad3ac2791
+
+depends_build       port:pkgconfig
+depends_lib         port:ocaml \
+                    port:caml-findlib \
+                    port:flac \
+                    port:ocaml-ogg
+
+configure.pkg_config    ${prefix}/bin/pkg-config
+universal_variant       no
+
+build.args          LIBDIRS=${prefix}/lib
+
+pre-destroot {
+    set ocamlfind_destdir "${destroot}[exec ${prefix}/bin/ocamlfind printconf destdir]"
+    file mkdir $ocamlfind_destdir/stublibs
+    reinplace "s#\$(OCAMLFIND_INSTFLAGS)# -ldconf ignore -destdir '$ocamlfind_destdir'#g" \
+        ${worksrcpath}/src/OCamlMakefile
+}

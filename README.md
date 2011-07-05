@@ -42,6 +42,7 @@ Available portfiles
  * [caml-xmlm][] 1.0.2
  * [ocaml][] 3.12.1
  * [ocaml-faad][] 0.3.0
+ * [ocaml-flac][] 0.1.0
  * [ocaml-lame][] 0.3.0
  * [ocaml-lastfm][] 0.3.0
  * [ocaml-mad][] 0.4.2
@@ -70,6 +71,7 @@ Available portfiles
 [caml-xmlm]: http://erratique.ch/software/xmlm
 [ocaml]: http://caml.inria.fr/ocaml/
 [ocaml-faad]: http://savonet.sf.net
+[ocaml-flac]: http://savonet.sf.net
 [ocaml-lame]: http://savonet.sf.net
 [ocaml-lastfm]: http://savonet.sf.net
 [ocaml-mad]: http://savonet.sf.net
