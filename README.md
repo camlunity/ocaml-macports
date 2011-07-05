@@ -26,6 +26,7 @@ Available portfiles
 -------------------
 
  * [caml-batteries][] 1.3.0
+ * [caml-bin-prot][] 1.3.1
  * [caml-camomile][] 0.8.3
  * [caml-dypgen][] 20110618-1
  * [caml-iteratees][] 0.3
@@ -39,6 +40,7 @@ Available portfiles
  * [caml-ssl][] 0.4.5
  * [caml-text][] 0.4
  * [caml-xmlm][] 1.0.2
+ * [ocaml][] 3.12.1
  * [ocaml-faad][] 0.2.0
  * [ocaml-lame][] 0.2.4
  * [ocaml-lastfm][] 0.3.0
@@ -51,6 +53,7 @@ Available portfiles
  * [tuareg-mode.el][] 2.0.4
 
 [caml-batteries]: https://github.com/ocaml-batteries-team/batteries-included/
+[caml-bin-prot]: http://ocaml.janestreet.com/?q=node/13
 [caml-camomile]: http://camomile.sourceforge.net/
 [caml-dypgen]: http://dypgen.free.fr/
 [caml-iteratees]: http://ocaml-iteratees.forge.ocamlcore.org/
@@ -64,6 +67,7 @@ Available portfiles
 [caml-ssl]: http://savonet.sf.net
 [caml-text]: http://ocaml-text.forge.ocamlcore.org/
 [caml-xmlm]: http://erratique.ch/software/xmlm
+[ocaml]: http://caml.inria.fr/ocaml/
 [ocaml-faad]: http://savonet.sf.net
 [ocaml-lame]: http://savonet.sf.net
 [ocaml-lastfm]: http://savonet.sf.net
