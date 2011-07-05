@@ -39,7 +39,7 @@ depends_build port:pkgconfig portdir devel/ocaml-ogg description {OCaml bindings
 ocaml-theora 446
 depends_build port:pkgconfig portdir devel/ocaml-theora description {OCaml bindings for Xiph.org Foundation's open video codec} homepage http://savonet.sf.net/ epoch 0 platforms darwin depends_lib {port:ocaml port:caml-findlib port:libtheora} name ocaml-theora license unknown maintainers ftrvxmtrx@gmail.com long_description {{OCaml bindings for Xiph.org Foundation's open video codec}} categories {devel ml multimedia} version 0.2.0 revision 0
 ocaml-vorbis 396
-depends_build port:pkgconfig portdir devel/ocaml-vorbis description {OCaml bindings for the vorbis audio library} homepage http://savonet.sf.net/ epoch 0 platforms darwin name ocaml-vorbis depends_lib {port:ocaml port:caml-findlib port:ocaml-ogg port:libvorbis} license unknown long_description {{OCaml bindings for the vorbis audio library}} categories {devel ml audio} version 0.5.1 revision 0
+depends_build port:pkgconfig portdir devel/ocaml-vorbis description {OCaml bindings for the vorbis audio library} homepage http://savonet.sf.net/ epoch 0 platforms darwin name ocaml-vorbis depends_lib {port:ocaml port:caml-findlib port:ocaml-ogg port:libvorbis} license unknown long_description {{OCaml bindings for the vorbis audio library}} categories {devel ml audio} version 0.6.0 revision 0
 ocaml-xmlplaylist 301
 portdir devel/ocaml-xmlplaylist description {XML playlist for OCaml} homepage http://savonet.sf.net epoch 0 platforms darwin name ocaml-xmlplaylist depends_lib {port:ocaml port:caml-findlib port:caml-xmlm} license unknown maintainers ftrvxmtrx@gmail.com version 0.1.2 categories {devel ml} revision 0
 ocamlsdl 606
