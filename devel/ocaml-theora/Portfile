@@ -3,7 +3,7 @@
 PortSystem          1.0
 
 name                ocaml-theora
-version             0.2.0
+version             0.3.0
 categories          devel ml multimedia
 maintainers         ftrvxmtrx@gmail.com
 description         OCaml bindings for Xiph.org Foundation's open video codec
@@ -12,9 +12,9 @@ homepage            http://savonet.sf.net/
 platforms           darwin
 master_sites        sourceforge:savonet
 
-checksums           md5  4fe17f5bcb27ec3d491eacf7126f3d92 \
-                    sha1  7eb823d0c56299c92494cada9ca04db1415de989 \
-                    rmd160 e243fa62b9f3565fa7baa42402b41d82f1ea67b8
+checksums           md5  7fc569ab2de795e44161b554fd1dc1c8 \
+                    sha1  99e30f286d3de195a47deaf31119c10c875dca5c \
+                    rmd160 5e4ec81182463d7863dc9226db65cadad76ed40a
 
 depends_build       port:pkgconfig
 depends_lib         port:ocaml \
