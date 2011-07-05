@@ -1,0 +1,35 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+
+PortSystem          1.0
+
+name                ocaml-speex
+version             0.2.0
+categories          devel ml multimedia
+maintainers         ftrvxmtrx@gmail.com
+description         OCaml bindings for Speex
+long_description    $description
+homepage            http://savonet.sf.net/
+platforms           darwin
+master_sites        sourceforge:savonet
+
+checksums           md5  acfa92885fa94e46b888bdbc8fbc417a \
+                    sha1  47e33a0894e647e089176bdd5c17f505377070c8 \
+                    rmd160 eaaa4ca694ba34ac7b326ba65353ca396b623e8c
+
+depends_build       port:pkgconfig
+depends_lib         port:ocaml \
+                    port:caml-findlib \
+                    port:speex \
+                    port:ocaml-ogg
+
+configure.pkg_config    ${prefix}/bin/pkg-config
+universal_variant       no
+
+build.args          LIBDIRS=${prefix}/lib
+
+pre-destroot {
+    set ocamlfind_destdir "${destroot}[exec ${prefix}/bin/ocamlfind printconf destdir]"
+    file mkdir $ocamlfind_destdir/stublibs
+    reinplace "s#\$(OCAMLFIND_INSTFLAGS)# -ldconf ignore -destdir '$ocamlfind_destdir'#g" \
+        ${worksrcpath}/src/OCamlMakefile
+}
