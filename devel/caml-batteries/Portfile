@@ -38,9 +38,13 @@ use_configure       no
 use_parallel_build  no
 
 set ocamlfind_destdir ${destroot}${prefix}/lib/ocaml/site-lib
+set docroot           ${prefix}/share/doc/ocaml-batteries
+
+build.env           DOCROOT=${docroot} BROWSER_COMMAND="open %s"
+destroot.env        DOCROOT=${destroot}${docroot}
 
 destroot.target     install
-destroot.destdir    DESTDIR=${ocamlfind_destdir} DOCROOT=${destroot}${prefix}/share/doc/ocaml-batteries
+destroot.destdir    DESTDIR=${ocamlfind_destdir}
 
 pre-destroot {
     file mkdir $ocamlfind_destdir
@@ -49,8 +53,7 @@ pre-destroot {
 livecheck.type      regex
 livecheck.regex     "batteries-(.*?).tar.gz"
 
-# doesn't work yet (sanitize fail)
-#variant doc description {Install documentation} {
-#    build.target-append doc
-#    destroot.target-append install-doc
-#}
+variant doc description {Install documentation} {
+    build.target-append doc OCAMLBUILD="ocamlbuild -no-hygiene"
+    destroot.target-append install-doc
+}
