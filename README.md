@@ -42,7 +42,7 @@ Available portfiles
  * [caml-xmlm][] 1.0.2
  * [ocaml][] 3.12.1
  * [ocaml-faad][] 0.3.0
- * [ocaml-lame][] 0.2.4
+ * [ocaml-lame][] 0.3.0
  * [ocaml-lastfm][] 0.3.0
  * [ocaml-mad][] 0.4.2
  * [ocaml-ogg][] 0.4.2

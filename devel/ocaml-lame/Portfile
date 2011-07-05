@@ -3,7 +3,7 @@
 PortSystem          1.0
 
 name                ocaml-lame
-version             0.2.4
+version             0.3.0
 categories          devel ml audio
 license             GPL-2+
 #maintainers         rastageeks.org:toots
@@ -13,9 +13,9 @@ homepage            http://savonet.sf.net/
 platforms           darwin
 master_sites        sourceforge:savonet
 
-checksums           md5  b2f98defd83bdd75e3552776b3b55bf8 \
-                    sha1  0758a423add37144d70c9ad11d78683a8554f47f \
-                    rmd160  6d53c5258ff9d36d966fd78c1698f8fcf5aba430
+checksums           md5  a32b919ab2ab3e6c340829d2778e47d2 \
+                    sha1  4608fcb356ab8aeafb188400905da2d2406611cd \
+                    rmd160  3ebae8b23aecd8c3c63514173d5b4b3bacff3de3
 
 depends_lib         port:ocaml \
                     port:caml-findlib \
@@ -23,6 +23,7 @@ depends_lib         port:ocaml \
 
 build.args          LIBDIRS=${prefix}/lib
 universal_variant   no
+use_parallel_build  no
 
 pre-destroot {
   set ocamlfind_destdir "${destroot}[exec ${prefix}/bin/ocamlfind printconf destdir]"
