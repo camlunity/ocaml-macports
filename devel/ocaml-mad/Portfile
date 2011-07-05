@@ -3,7 +3,7 @@
 PortSystem          1.0
 
 name                ocaml-mad
-version             0.4.1
+version             0.4.2
 categories          devel ml audio
 #maintainers         rastageeks.org:toots
 description         OCaml bindings for libmad MPEG audio decoding library
@@ -12,9 +12,9 @@ homepage            http://savonet.sf.net/
 platforms           darwin
 master_sites        sourceforge:savonet
 
-checksums           md5  bd6441ca48b55a7e99511c394eb25ac6 \
-                    sha1  f290ae63b8dbdf6991487ff0a0c51d34dad1a4f1 \
-                    rmd160 c5795250c2b7a23f24f8830ff12c7d14d0ad7098
+checksums           md5  de7f88ff6296d62ae1c6c2c5ad076ccc \
+                    sha1  652eafd82949f5ceb8a31b44aac5fb756abce475 \
+                    rmd160 a7c52a571f4d04e83d4c2611e2a0450de3ff2d50
 
 depends_build       port:pkgconfig
 depends_lib         port:ocaml \
