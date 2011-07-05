@@ -3,7 +3,7 @@
 PortSystem          1.0
 
 name                ocaml-faad
-version             0.2.0
+version             0.3.0
 categories          devel ml audio
 maintainers         rastageeks.org:toots
 description         OCaml bindings for the AAC decoding library
@@ -13,9 +13,9 @@ homepage            http://savonet.sf.net/
 platforms           darwin
 master_sites        sourceforge:savonet
 
-checksums           md5  39cde91823b65889b6b9f0dc7f4fe19b \
-                    sha1  59ab0be1bf643dfbfae05ba83a8b0408bdaecea1 \
-                    rmd160  88643278010462dc8e75fdd1204aa7c35edff9ff
+checksums           md5  81571625e9c3a86044bb3ad82c71c82e \
+                    sha1  ea3b4528097f14080f405452261bfb26d2320cc9 \
+                    rmd160  74c26b925759f1503bfd78a5cd17008662b8d4aa
 
 depends_build       port:pkgconfig
 depends_lib         port:ocaml \
