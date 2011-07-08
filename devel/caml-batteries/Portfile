@@ -4,7 +4,7 @@ PortSystem          1.0
 
 name                caml-batteries
 epoch               1
-version             1.3.0
+version             1.4.0
 categories          devel ml
 #maintainers         erickt openmaintainer
 description         A new O'Caml standard library
@@ -13,13 +13,13 @@ long_description    OCaml Batteries included (or simply Batteries) is a \
                     documented, and comprehensive development platform for the \
                     OCaml programming language.
 homepage            http://batteries.forge.ocamlcore.org/
-master_sites        https://forge.ocamlcore.org/frs/download.php/560
+master_sites        https://forge.ocamlcore.org/frs/download.php/643
 platforms           darwin
 
 distname            batteries-${version}
 
-checksums           sha1   afd5fbb6c0424fb08e9a66790679401c8e003cc4 \
-                    rmd160 00ae9372648ee9e927a6edd581b56e84fa54a79f
+checksums           sha1   5b3da884c5de803540991662987449072d85c96a \
+                    rmd160 f3e5fb3ff7e65941dbb4e81225eab23349ae16fd
 
 depends_lib         port:ocaml \
                     port:caml-findlib \
@@ -31,16 +31,13 @@ depends_lib         port:ocaml \
                     port:caml-ocamlnet \
                     port:caml-ounit
 
-patchfiles          patch-Makefile.diff
-patch.pre_args      -p1
-
 use_configure       no
 use_parallel_build  no
 
 set ocamlfind_destdir ${destroot}${prefix}/lib/ocaml/site-lib
 set docroot           ${prefix}/share/doc/ocaml-batteries
 
-build.env           DOCROOT=${docroot} BROWSER_COMMAND="open %s"
+build.env           DOCROOT=${docroot} BROWSER_COMMAND="open"
 destroot.env        DOCROOT=${destroot}${docroot}
 
 destroot.target     install

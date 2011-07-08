@@ -25,7 +25,7 @@ Installing
 Available portfiles
 -------------------
 
- * [caml-batteries][] 1.3.0
+ * [caml-batteries][] 1.4.0
  * [caml-bin-prot][] 1.3.1
  * [caml-camomile][] 0.8.3
  * [caml-dypgen][] 20110618-1
