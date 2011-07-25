@@ -40,7 +40,7 @@ set docroot           ${prefix}/share/doc/ocaml-batteries
 build.env           DOCROOT=${docroot} BROWSER_COMMAND="open"
 destroot.env        DOCROOT=${destroot}${docroot}
 
-destroot.target     install
+destroot.target     install OCAMLBUILD="ocamlbuild -no-hygiene"
 destroot.destdir    DESTDIR=${ocamlfind_destdir}
 
 pre-destroot {
