@@ -3,7 +3,7 @@
 PortSystem          1.0
 
 name                ocaml-taglib
-version             0.1.4
+version             0.2.0
 categories          devel ml audio
 #maintainers         rastageeks.org:toots
 description         OCaml bindings for taglib
@@ -13,9 +13,9 @@ homepage            http://savonet.sf.net/
 platforms           darwin
 master_sites        sourceforge:savonet
 
-checksums           md5  1665f9bfb247ec40c0e12db3daad23c9 \
-                    sha1  327c19f5f3eeedfa81e4939e350c624ab36c3942 \
-                    rmd160  46ba01f1650a94d890816b264212a1ae0c7bd73f
+checksums           md5  3e15260d935ce1791edc39b512391b24 \
+                    sha1  829866812dfdc5c1b0576f7b89846093bb902f80 \
+                    rmd160  52e2d042d027f5474f88477196eece298f641f8a
 
 depends_build       port:pkgconfig
 depends_lib         port:ocaml \

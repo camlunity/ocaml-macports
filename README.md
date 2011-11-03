@@ -48,7 +48,7 @@ Available portfiles
  * [ocaml-mad][] 0.4.2
  * [ocaml-ogg][] 0.4.2
  * [ocaml-speex][] 0.2.0
- * [ocaml-taglib][] 1.1.4
+ * [ocaml-taglib][] 0.2.0
  * [ocaml-theora][] 0.3.0
  * [ocaml-vorbis][] 0.6.0
  * [ocaml-xmlplaylist][] 0.1.3
