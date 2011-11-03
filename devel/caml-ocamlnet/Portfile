@@ -3,7 +3,7 @@
 PortSystem          1.0
 
 name                caml-ocamlnet
-version             3.3.3
+version             3.4.1
 categories          devel ml
 #maintainers         landonf openmaintainer
 description         Internet protocols and helper data structures for OCaml.
@@ -20,9 +20,9 @@ master_sites        http://download.camlcity.org/download/
 
 distname            ocamlnet-${version}
 
-checksums           md5 c99f14dd94041d2b10eade55615a3c0b \
-                    sha1 23234ccbc3522b833029ae873730b876b73a3638 \
-                    rmd160 df1c8856a8e8f30a0638a976a208dd311c33b9a3
+checksums           md5 34e077c532691c02e506901234c184bc \
+                    sha1 1359380351c2049325d4629fc837d543477bc28e \
+                    rmd160 d55d84834549c9a0b32d9e5609cdf5df44e57ef1
 
 
 depends_lib         port:ocaml \
@@ -32,16 +32,10 @@ depends_lib         port:ocaml \
 # ocaml is not universal
 universal_variant   no
 
-patchfiles          patch-rpcgen.diff
-
 post-patch {
     set ocaml_site_path [exec ocamlfind printconf destdir]
     reinplace       "s|\$(OCAMLFIND) install|\$(OCAMLFIND) install -destdir ${destroot}/${ocaml_site_path}|g" \
                     ${worksrcpath}/Makefile
-    reinplace       "s|@CPP@|${configure.cpp}|g" \
-                    ${worksrcpath}/src/netplex/Makefile.pre \
-                    ${worksrcpath}/src/rpc/Makefile.pre \
-                    ${worksrcpath}/src/rpc-auth-dh/Makefile.pre
 }
 
 configure.pre_args
