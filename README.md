@@ -50,7 +50,7 @@ Available portfiles
  * [ocaml-speex][] 0.2.0
  * [ocaml-taglib][] 0.2.0
  * [ocaml-theora][] 0.3.0
- * [ocaml-vorbis][] 0.6.0
+ * [ocaml-vorbis][] 0.6.1
  * [ocaml-xmlplaylist][] 0.1.3
  * [ocamlsdl][] 0.8.0
  * [tuareg-mode.el][] 2.0.4

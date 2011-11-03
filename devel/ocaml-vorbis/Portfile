@@ -3,7 +3,7 @@
 PortSystem          1.0
 
 name                ocaml-vorbis
-version             0.6.0
+version             0.6.1
 categories          devel ml audio
 #maintainers         rastageeks.org:toots
 description         OCaml bindings for the vorbis audio library
@@ -12,9 +12,9 @@ homepage            http://savonet.sf.net/
 platforms           darwin
 master_sites        sourceforge:savonet
 
-checksums           md5  54c56639aa58017a5e412668f718a7b6 \
-                    sha1  64bbcf20a8b6ed30f6eb30059200b47928d63554 \
-                    rmd160  5276c1f80b101882bdf77376676107cb0c23f17b
+checksums           md5  f56c3566d1485e5b5cb9aa75acbd9d0c \
+                    sha1  b0c895bc3fa5be2d1fc30dc31d1d542402b4a6f6 \
+                    rmd160  8839597a07c4d8bb3af7803c165fabbfd43df59d
 
 depends_build       port:pkgconfig
 depends_lib         port:ocaml \
@@ -22,6 +22,7 @@ depends_lib         port:ocaml \
                     port:ocaml-ogg \
                     port:libvorbis
 
+configure.env-append    USER=fakenonroot
 configure.pkg_config    ${prefix}/bin/pkg-config
 universal_variant       no
 
