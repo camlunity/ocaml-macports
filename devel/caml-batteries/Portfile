@@ -4,7 +4,7 @@ PortSystem          1.0
 
 name                caml-batteries
 epoch               1
-version             1.4.0
+version             1.4.1
 categories          devel ml
 #maintainers         erickt openmaintainer
 description         A new O'Caml standard library
@@ -13,13 +13,13 @@ long_description    OCaml Batteries included (or simply Batteries) is a \
                     documented, and comprehensive development platform for the \
                     OCaml programming language.
 homepage            http://batteries.forge.ocamlcore.org/
-master_sites        https://forge.ocamlcore.org/frs/download.php/643
+master_sites        https://forge.ocamlcore.org/frs/download.php/684
 platforms           darwin
 
 distname            batteries-${version}
 
-checksums           sha1   5b3da884c5de803540991662987449072d85c96a \
-                    rmd160 f3e5fb3ff7e65941dbb4e81225eab23349ae16fd
+checksums           sha1    bb681690ab5a6f8b0b21c4de38349f07302eb4ba \
+                    rmd160  bdadb7ae9725abc9dce829458b519fa240588341
 
 depends_lib         port:ocaml \
                     port:caml-findlib \
