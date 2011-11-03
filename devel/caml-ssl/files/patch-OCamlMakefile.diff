@@ -1,0 +1,11 @@
+--- src/OCamlMakefile	2011-11-03 17:25:06.000000000 +0200
++++ src/OCamlMakefile	2011-11-03 17:26:00.000000000 +0200
+@@ -885,7 +885,7 @@
+ 
+ else
+ $(DLLSONAME):		$(OBJ_LINK)
+-			$(OCAMLMKLIB) $(INCFLAGS) $(CLIBFLAGS) \
++			$(OCAMLMKLIB) $(INCFLAGS) \
+ 				-o $(CLIB_BASE) $(OBJ_LINK) $(CLIBS:%=-l%) \
+ 				$(OCAMLMKLIB_FLAGS)
+ endif

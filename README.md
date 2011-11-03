@@ -37,7 +37,7 @@ Available portfiles
  * [caml-postgresql][] 1.16.0
  * [caml-react][] 0.9.2
  * [caml-sqlite3][] 1.6.1
- * [caml-ssl][] 0.4.5
+ * [caml-ssl][] 0.4.6
  * [caml-text][] 0.4
  * [caml-xmlm][] 1.0.2
  * [ocaml][] 3.12.1
