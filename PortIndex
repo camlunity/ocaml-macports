@@ -31,7 +31,7 @@ depends_build port:pkgconfig portdir devel/ocaml-faad description {OCaml binding
 ocaml-flac 384
 depends_build port:pkgconfig portdir devel/ocaml-flac description {OCaml bindings for FLAC} homepage http://savonet.sf.net/ epoch 0 platforms darwin depends_lib {port:ocaml port:caml-findlib port:flac port:ocaml-ogg} name ocaml-flac license unknown maintainers ftrvxmtrx@gmail.com long_description {{OCaml bindings for FLAC}} categories {devel ml multimedia} version 0.1.0 revision 0
 ocaml-lame 354
-portdir devel/ocaml-lame description {OCaml bindings for the lame MPEG encoding library} homepage http://savonet.sf.net/ epoch 0 platforms darwin name ocaml-lame depends_lib {port:ocaml port:caml-findlib port:lame} license GPL-2+ long_description {{OCaml bindings for the lame MPEG encoding library}} version 0.3.0 categories {devel ml audio} revision 0
+portdir devel/ocaml-lame description {OCaml bindings for the lame MPEG encoding library} homepage http://savonet.sf.net/ epoch 0 platforms darwin name ocaml-lame depends_lib {port:ocaml port:caml-findlib port:lame} license GPL-2+ long_description {{OCaml bindings for the lame MPEG encoding library}} version 0.3.1 categories {devel ml audio} revision 0
 ocaml-lastfm 306
 portdir devel/ocaml-lastfm description {OCaml bindings for Lastfm API} homepage http://savonet.sf.net epoch 0 platforms darwin name ocaml-lastfm depends_lib {port:ocaml port:caml-findlib port:ocaml-xmlplaylist} license unknown maintainers ftrvxmtrx@gmail.com version 0.3.0 categories {devel ml} revision 0
 ocaml-mad 392

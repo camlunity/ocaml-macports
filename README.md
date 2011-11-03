@@ -43,7 +43,7 @@ Available portfiles
  * [ocaml][] 3.12.1
  * [ocaml-faad][] 0.3.0
  * [ocaml-flac][] 0.1.0
- * [ocaml-lame][] 0.3.0
+ * [ocaml-lame][] 0.3.1
  * [ocaml-lastfm][] 0.3.0
  * [ocaml-mad][] 0.4.4
  * [ocaml-ogg][] 0.4.3
