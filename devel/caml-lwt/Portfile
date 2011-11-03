@@ -3,7 +3,7 @@
 PortSystem          1.0
 
 name                caml-lwt
-version             2.3.0
+version             2.3.1
 distname            lwt-${version}
 categories          devel ml
 #maintainers         nomaintainer
@@ -17,9 +17,9 @@ master_sites        http://ocsigen.org/download/
 depends_lib         port:ocaml port:caml-findlib port:caml-ssl \
                     port:caml-react port:caml-text port:libev
 
-checksums           md5     d996dfa94dfc199e5f9b1aef55f37ede \
-                    sha1    10a35aecd6ebe312e939872307f7daa71f51d15a \
-                    rmd160  482c671814e3e2bde797c3deb924a5a2446db376
+checksums           md5     fb7f3600a075c94a94eacf2464c09feb \
+                    sha1    ff24f98362c03df0df620011c31b6cc06308ef4e \
+                    rmd160  379ac57f13c22860354120b0d42d0efdf351a041
 
 configure.pre_args-delete --prefix=${prefix}
 configure.args      --enable-ssl --enable-react --enable-text
