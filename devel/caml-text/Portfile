@@ -3,7 +3,7 @@
 PortSystem          1.0
 
 name                caml-text
-version             0.4
+version             0.5
 distname            ocaml-text-${version}
 categories          devel ml
 #maintainers         nomaintainer
@@ -12,13 +12,13 @@ long_description    OCaml-Text is a library for dealing with text, \
                     i.e. sequence of unicode characters, in a convenient way.
 platforms           darwin
 homepage            http://forge.ocamlcore.org/projects/ocaml-text/
-master_sites        http://forge.ocamlcore.org/frs/download.php/537/
+master_sites        http://forge.ocamlcore.org/frs/download.php/641
 
 depends_lib         port:ocaml port:caml-findlib port:caml-pcre
 
-checksums           md5     5cd819fceb055ed00399ca39d9623096 \
-                    sha1    77676eee5286c775144e59dee126377b61282602 \
-                    rmd160  94d5d381dab5ee2f7a916ad9e9be3a9b5695252b
+checksums           md5     5f004642ba19c1710ade13d46e2c1df2 \
+                    sha1    26d02d1a5340c24c0ed2ecf852f5857a8c49c646 \
+                    rmd160  860fbfc66511d008ab4f18c53bcadc78e961c5ad
 
 # libiconv fix
 compiler.cpath      {}
