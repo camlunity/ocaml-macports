@@ -46,7 +46,7 @@ Available portfiles
  * [ocaml-lame][] 0.3.0
  * [ocaml-lastfm][] 0.3.0
  * [ocaml-mad][] 0.4.2
- * [ocaml-ogg][] 0.4.2
+ * [ocaml-ogg][] 0.4.3
  * [ocaml-speex][] 0.2.0
  * [ocaml-taglib][] 0.2.0
  * [ocaml-theora][] 0.3.0

@@ -3,7 +3,7 @@
 PortSystem          1.0
 
 name                ocaml-ogg
-version             0.4.2
+version             0.4.3
 categories          devel ml multimedia
 #maintainers         rastageeks.org:toots
 description         OCaml bindings for the libogg multimedia library
@@ -13,15 +13,16 @@ homepage            http://savonet.sf.net/
 platforms           darwin
 master_sites        sourceforge:savonet
 
-checksums           md5  dd575a1c8d1d569501d704e7b23d70dc \
-                    sha1  06462e026036bc4c42113b745cd78c43add0a40e \
-                    rmd160  b36a72e7652fd7c39ad18bedcd2523713b75658a
+checksums           md5  c7315615800cc493b8d53e7b269a83c3 \
+                    sha1  570bfa47b20986dac7aa631bcbc098cf445ff32d \
+                    rmd160  7a19ae3b47cd2d0837b92902847f6de73b002886
 
 depends_build       port:pkgconfig
 depends_lib         port:ocaml \
                     port:caml-findlib \
                     port:libogg
 
+configure.env-append    USER=fakenonroot
 configure.pkg_config    ${prefix}/bin/pkg-config
 universal_variant       no
 
