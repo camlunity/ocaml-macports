@@ -53,7 +53,6 @@ Available portfiles
  * [ocaml-vorbis][] 0.6.1
  * [ocaml-xmlplaylist][] 0.1.3
  * [ocamlsdl][] 0.8.0
- * [tuareg-mode.el][] 2.0.4
 
 [caml-batteries]: https://github.com/ocaml-batteries-team/batteries-included/
 [caml-bin-prot]: http://ocaml.janestreet.com/?q=node/13
@@ -83,7 +82,6 @@ Available portfiles
 [ocaml-vorbis]: http://savonet.sf.net
 [ocaml-xmlplaylist]: http://savonet.sf.net
 [ocamlsdl]: http://ocamlsdl.sourceforge.net/home.html
-[tuareg-mode.el]: https://forge.ocamlcore.org/projects/tuareg/
 
 MacPorts
 --------
